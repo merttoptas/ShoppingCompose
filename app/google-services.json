@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "490490207355",
+    "project_id": "shoppingcompose",
+    "storage_bucket": "shoppingcompose.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:490490207355:android:3d90281f9ea6e3604616de",
+        "android_client_info": {
+          "package_name": "com.merttoptas.shoppingcompose"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "490490207355-jdkl2qr1pg6lgo9bpssbqjo996u53njc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.merttoptas.shoppingcompose",
+            "certificate_hash": "296b01a8e7b3311df211f82e7e7092966333f624"
+          }
+        },
+        {
+          "client_id": "490490207355-1e3hjqnh07lll1mi63gcn982ekfi0s9g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWyRNH-SQ_QrIhNzDalodBDs6QaUeSKic"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "490490207355-1e3hjqnh07lll1mi63gcn982ekfi0s9g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

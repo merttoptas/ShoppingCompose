@@ -13,6 +13,6 @@ class AuthRepositoryImpl @Inject constructor(
     private val authRemoteDataSource: AuthRemoteDataSource
 ) : AuthRepository {
     override suspend fun login(username: String, password: String): Result<LoginResponse> {
-        return  authRemoteDataSource.login(username, password)
+        return authRemoteDataSource.login(username, password)
     }
 }

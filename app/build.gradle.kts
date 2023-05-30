@@ -3,6 +3,7 @@ plugins {
     id("org.jetbrains.kotlin.android")
     kotlin("kapt")
     id("com.google.dagger.hilt.android")
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -72,6 +73,7 @@ dependencies {
     // Hilt
     implementation("com.google.dagger:hilt-android:2.44")
     kapt("com.google.dagger:hilt-android-compiler:2.44")
+    implementation("androidx.hilt:hilt-navigation-compose:1.0.0")
 
     // Retrofit
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
@@ -83,5 +85,18 @@ dependencies {
 
     // datastore
     implementation("androidx.datastore:datastore-preferences:1.0.0")
-    
+
+    // navigation component
+    implementation("androidx.navigation:navigation-compose:2.5.3")
+
+    //lifescyle compose
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.1")
+    implementation("androidx.lifecycle:lifecycle-runtime-compose:2.6.1")
+
+    implementation(platform("com.google.firebase:firebase-bom:32.1.0"))
+    implementation("com.google.firebase:firebase-analytics-ktx")
+
+    implementation("com.google.firebase:firebase-auth")
+
+    implementation("com.google.android.gms:play-services-auth:20.5.0")
 }
