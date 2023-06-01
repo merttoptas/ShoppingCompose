@@ -2,6 +2,7 @@ package com.merttoptas.shoppingcompose.core.data.di
 
 import com.google.firebase.FirebaseApp
 import com.merttoptas.shoppingcompose.core.data.remote.api.AuthService
+import com.merttoptas.shoppingcompose.core.data.remote.api.ProductService
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -60,7 +61,10 @@ object RemoteDataModule {
         return retrofit.create(AuthService::class.java)
     }
 
-    // provide firebase app
-
+    @Provides
+    @Singleton
+    fun provideProductService(retrofit: Retrofit): ProductService {
+        return retrofit.create(ProductService::class.java)
+    }
 
 }
